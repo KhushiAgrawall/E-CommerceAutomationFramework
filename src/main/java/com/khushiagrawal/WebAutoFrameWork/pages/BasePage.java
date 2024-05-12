@@ -3,6 +3,7 @@ package com.khushiagrawal.WebAutoFrameWork.pages;
 import com.khushiagrawal.WebAutoFrameWork.actions.ButtonAction;
 import com.khushiagrawal.WebAutoFrameWork.actions.TextBox;
 import com.khushiagrawal.WebAutoFrameWork.actions.WebActions;
+import com.khushiagrawal.WebAutoFrameWork.components.HeaderComponent;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
@@ -17,6 +18,9 @@ public abstract class BasePage {
         this.buttonActions=new ButtonAction(driver);
         this.textBox=new TextBox(driver);
         this.webActions=new WebActions(driver);
+    }
+    public HeaderComponent getHeader(){
+        return new HeaderComponent(driver);
     }
 
 
