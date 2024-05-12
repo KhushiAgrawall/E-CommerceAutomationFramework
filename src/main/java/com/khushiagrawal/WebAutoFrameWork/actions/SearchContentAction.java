@@ -26,22 +26,8 @@ public class SearchContentAction {
 
     public SearchContentAction soldOutProduct(){
         return SearchContentAction.builder()
-                .input("76 Skies")
+                .input("12 Ti Xelium Skis")
                 .build();
-    }
-    public SearchContentAction shoes(){
-        return SearchContentAction.builder()
-                .input("Shoes")
-                .build();
-    }
-
-    public SearchContentAction jacket(){
-        return SearchContentAction.builder()
-                .input("Jacket")
-                .build();
-    }
-    public String selectJacket(){
-        return "Reasonable Jacket";
     }
 
     public String selectDress(){
