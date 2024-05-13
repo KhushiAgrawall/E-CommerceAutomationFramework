@@ -23,6 +23,11 @@ public class SearchContentAction {
                 .input("Stell Top")
                 .build();
     }
+    public SearchContentAction golfShoes(){
+        return SearchContentAction.builder()
+                .input("Golf Shoe in White")
+                .build();
+    }
 
     public SearchContentAction soldOutProduct(){
         return SearchContentAction.builder()
