@@ -1,4 +1,4 @@
-package com.khushiagrawal.WebAutoFrameWork.models;
+package com.khushiagrawal.WebAutoFrameWork.modals;
 
 import com.khushiagrawal.WebAutoFrameWork.pages.BasePage;
 import com.khushiagrawal.WebAutoFrameWork.pages.CartPage;
@@ -10,8 +10,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class CartModel extends BasePage {
-    public CartModel(WebDriver driver) {
+public class CartModal extends BasePage {
+    public CartModal(WebDriver driver) {
         super(driver);
     }
     WebDriverWait webDriverWait=new WebDriverWait(driver, Duration.ofSeconds(10));

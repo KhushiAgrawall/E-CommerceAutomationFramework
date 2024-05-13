@@ -1,7 +1,7 @@
 package com.khushiagrawal.WebAutoFrameWork;
 
 import com.khushiagrawal.WebAutoFrameWork.actions.SearchContentAction;
-import com.khushiagrawal.WebAutoFrameWork.models.CartModel;
+import com.khushiagrawal.WebAutoFrameWork.modals.CartModal;
 import com.khushiagrawal.WebAutoFrameWork.pages.CartPage;
 import com.khushiagrawal.WebAutoFrameWork.pages.HomePage;
 import com.khushiagrawal.WebAutoFrameWork.pages.ProductDetailsPage;
@@ -17,7 +17,7 @@ public class ValidateCartContentsTest extends BaseTest{
         homePage.getHeader().clickSearchBtn().searchProduct(searchContent.getInput());
         ViewSearchResultPage viewSearchResultPage=new ViewSearchResultPage(getWebDriver());
         ProductDetailsPage productDetailsPage = viewSearchResultPage.clickToViewProductByName();
-        CartModel cartModel=new CartModel(getWebDriver());
+        CartModal cartModel=new CartModal(getWebDriver());
         CartPage cartPage=new CartPage(getWebDriver());
         if(!productDetailsPage.isProductSoldOut()){
             cartPage = productDetailsPage.clickAddToCart();
@@ -36,7 +36,7 @@ public class ValidateCartContentsTest extends BaseTest{
         homePage.getHeader().clickSearchBtn().searchProduct(searchContent.getInput());
         ViewSearchResultPage viewSearchResultPage=new ViewSearchResultPage(getWebDriver());
         ProductDetailsPage productDetailsPage = viewSearchResultPage.clickToViewProductByName();
-        CartModel cartModel=new CartModel(getWebDriver());
+        CartModal cartModel=new CartModal(getWebDriver());
         CartPage cartPage=new CartPage(getWebDriver());
         if(!productDetailsPage.isProductSoldOut()){
             cartPage = productDetailsPage.clickAddToCart();

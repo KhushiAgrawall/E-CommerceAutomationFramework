@@ -20,9 +20,11 @@ dependencies {
     //Selenium
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.20.0'
 
-
     //TestNG
     testImplementation group: 'org.testng', name: 'testng', version: '7.10.1'
+
+    //javafaker
+    implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
 }
     test {
     useTestNG()
