@@ -1,5 +1,6 @@
 package com.khushiagrawal.WebAutoFrameWork.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -44,4 +45,10 @@ public class CartPage extends BasePage{
     public String getCartHeading(){
         return webActions.getText(cartHeading);
     }
+    public int getItemCountInCart() {
+        // You may need to locate a web element that represents the item count in the actual cart.
+        WebElement itemCountElement = driver.findElement(By.xpath("xpath-to-cart-item-count"));
+        return Integer.parseInt(itemCountElement.getText().trim());
+    }
 }
+
