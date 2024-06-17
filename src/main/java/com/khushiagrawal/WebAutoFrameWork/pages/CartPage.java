@@ -1,9 +1,14 @@
 package com.khushiagrawal.WebAutoFrameWork.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class CartPage extends BasePage{
     public CartPage(WebDriver driver) {
@@ -45,10 +50,21 @@ public class CartPage extends BasePage{
     public String getCartHeading(){
         return webActions.getText(cartHeading);
     }
-    public int getItemCountInCart() {
-        // You may need to locate a web element that represents the item count in the actual cart.
-        WebElement itemCountElement = driver.findElement(By.xpath("xpath-to-cart-item-count"));
-        return Integer.parseInt(itemCountElement.getText().trim());
+    public CartPage removeProductFromCart(String productName) {
+        WebElement deleteBtn= driver.findElement(By.xpath("//*[@id=\"Remove-1\"]/a"));
+        buttonActions.click(deleteBtn);
+        return new CartPage(driver);
+    }
+
+    public boolean CheckWeatherCartIsEmpty() {
+        try {
+            WebDriverWait webDriverWait=new WebDriverWait(driver, Duration.ofSeconds(2));
+            WebElement emptyCartMessage = driver.findElement(By.xpath("//h1[normalize-space()='Your cart is empty']"));
+            webDriverWait.until(ExpectedConditions.visibilityOf(emptyCartMessage));
+            return emptyCartMessage.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
     }
 }
 
