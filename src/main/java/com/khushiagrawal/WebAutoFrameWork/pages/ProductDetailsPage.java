@@ -17,6 +17,7 @@ public class ProductDetailsPage extends BasePage{
     }
     @FindBy(className = "product__title")
     private WebElement productName;
+
     public String getProductName(){
         return webActions.getText(productName);
     }
