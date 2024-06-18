@@ -1,5 +1,6 @@
 package com.khushiagrawal.WebAutoFrameWork.pages.accounts;
 
+import com.khushiagrawal.WebAutoFrameWork.actions.ButtonAction;
 import com.khushiagrawal.WebAutoFrameWork.models.UserModel;
 import com.khushiagrawal.WebAutoFrameWork.pages.BasePage;
 import org.openqa.selenium.By;
@@ -12,6 +13,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class LoginPage extends BasePage {
+
+
     @FindBy(id = "CustomerEmail")
     private WebElement emailIdBox;
 
@@ -29,6 +32,7 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//*[@id=\"customer_login\"]/div[@class='errors']//li")
     private WebElement errorBoxEle;
     public LoginPage(WebDriver driver) {
+
         super(driver);
     }
 
@@ -39,10 +43,6 @@ public class LoginPage extends BasePage {
         return new ProfilePage(driver);
     }
 
-    public ForgotPasswordPage navToForgotPasswordPage(){
-        buttonActions.click(forgotPasswordLinkEle);
-        return new ForgotPasswordPage(driver);
-    }
     public RegistrationPage navToRegisterationPage(){
         buttonActions.click(createAccountLinkEle);
         return new RegistrationPage(driver);
@@ -50,6 +50,11 @@ public class LoginPage extends BasePage {
 
     public String getErrorMessage(){
         return webActions.getText(errorBoxEle);
+    }
+
+    public ForgotPasswordPage navToForgotPasswordPage(){
+        ButtonAction.click(forgotPasswordLinkEle);
+        return new ForgotPasswordPage(driver);
     }
 
     public String forgotPasswordMessage(){

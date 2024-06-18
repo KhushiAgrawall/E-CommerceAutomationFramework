@@ -1,4 +1,4 @@
-package com.khushiagrawal.WebAutoFrameWork.RegistrationTest;
+package com.khushiagrawal.WebAutoFrameWork.AuthenticationTest;
 
 import com.khushiagrawal.WebAutoFrameWork.models.UserModel;
 import com.khushiagrawal.WebAutoFrameWork.pages.HomePage;

@@ -8,7 +8,7 @@ public class ButtonAction extends WebActions {
         super(webDriver);
     }
 
-    public void click(WebElement webElement){
+    public static void click(WebElement webElement){
         driverWait.until(ExpectedConditions.elementToBeClickable(webElement)).click();
     }
 }
