@@ -1,4 +1,4 @@
-package com.khushiagrawal.WebAutoFrameWork;
+package com.khushiagrawal.WebAutoFrameWork.utils;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

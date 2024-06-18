@@ -1,4 +1,4 @@
-package com.khushiagrawal.WebAutoFrameWork;
+package com.khushiagrawal.WebAutoFrameWork.utils;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;

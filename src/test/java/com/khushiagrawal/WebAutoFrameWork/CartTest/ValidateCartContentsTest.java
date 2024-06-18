@@ -1,5 +1,6 @@
-package com.khushiagrawal.WebAutoFrameWork;
+package com.khushiagrawal.WebAutoFrameWork.CartTest;
 
+import com.khushiagrawal.WebAutoFrameWork.utils.BaseTest;
 import com.khushiagrawal.WebAutoFrameWork.actions.SearchContentAction;
 import com.khushiagrawal.WebAutoFrameWork.modals.CartModal;
 import com.khushiagrawal.WebAutoFrameWork.pages.CartPage;

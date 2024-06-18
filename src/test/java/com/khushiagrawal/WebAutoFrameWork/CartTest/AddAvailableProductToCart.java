@@ -1,5 +1,6 @@
-package com.khushiagrawal.WebAutoFrameWork;
+package com.khushiagrawal.WebAutoFrameWork.CartTest;
 
+import com.khushiagrawal.WebAutoFrameWork.utils.BaseTest;
 import com.khushiagrawal.WebAutoFrameWork.actions.SearchContentAction;
 import com.khushiagrawal.WebAutoFrameWork.modals.CartModal;
 import com.khushiagrawal.WebAutoFrameWork.pages.HomePage;
@@ -10,7 +11,7 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AddAvailableProductToCart  extends BaseTest{
+public class AddAvailableProductToCart  extends BaseTest {
     private static final Logger logger = LogManager.getLogger(AddAvailableProductToCart.class);
     private static final Logger searchLogger= LogManager.getLogger("SearchLogger");
     private static final Logger cartLogger=LogManager.getLogger("CartLogger");

@@ -1,10 +1,11 @@
-package com.khushiagrawal.WebAutoFrameWork;
+package com.khushiagrawal.WebAutoFrameWork.RegistrationTest;
 
 import com.khushiagrawal.WebAutoFrameWork.models.UserModel;
 import com.khushiagrawal.WebAutoFrameWork.pages.HomePage;
 import com.khushiagrawal.WebAutoFrameWork.pages.accounts.LoginPage;
 import com.khushiagrawal.WebAutoFrameWork.pages.accounts.ProfilePage;
 import com.khushiagrawal.WebAutoFrameWork.pages.accounts.RegistrationPage;
+import com.khushiagrawal.WebAutoFrameWork.utils.BaseTest;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
