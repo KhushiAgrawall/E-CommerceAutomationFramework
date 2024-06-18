@@ -21,6 +21,10 @@ dependencies {
     //Selenium
     implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.20.0'
 
+    //log4j
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '3.0.0-beta2'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '3.0.0-beta2'
+
     //TestNG
     testImplementation group: 'org.testng', name: 'testng', version: '7.10.1'
 
