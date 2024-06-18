@@ -34,7 +34,6 @@ dependencies {
     // Allure
     testImplementation 'io.qameta.allure:allure-testng:2.27.0'
 }
-
     test {
     useTestNG()
 }
