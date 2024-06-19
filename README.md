@@ -12,7 +12,7 @@ This project contains an automated testing suite for an e-commerce web applicati
 ## Setup and Execution
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/KhushiAgrawall/WebAutomationFramework.git
+    git clone https://github.com/KhushiAgrawall/E-CommerceAutomationFramework.git
     ```
 
 2. **Navigate to the project directory:**
@@ -65,4 +65,4 @@ The source code is well-documented with comments and clear variable names to ens
 The project follows best practices in coding and Selenium WebDriver usage, such as using explicit waits, handling implicit waits, and implementing a page object model.
 
 ## Source Code
-The source code is available in the GitHub repository: [https://github.com/KhushiAgrawall/WebAutomationFramework](https://github.com/KhushiAgrawall/WebAutomationFramework)
+The source code is available in the GitHub repository: [https://github.com/KhushiAgrawall/E-CommerceAutomationFramework.git]
